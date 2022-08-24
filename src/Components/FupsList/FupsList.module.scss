@@ -1,0 +1,19 @@
+.list {
+    &__item {
+        display: flex;
+        margin-bottom: 24px;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    &__icon {
+        min-width: 20px;
+    }
+
+    &__title {
+        font-size: 16px;
+        font-weight: normal;
+        color: #dcdce6;
+        margin-left: 24px;
+    }
+}
