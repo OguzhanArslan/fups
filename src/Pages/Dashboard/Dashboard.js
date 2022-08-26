@@ -78,7 +78,7 @@ const data = [
 ];
 
 function Dashboard() {
-    return (<Layout>
+    return (<Layout className="layout">
         <Header />
         <FupsCarousel />
         <Table
