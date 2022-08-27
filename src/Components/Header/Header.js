@@ -1,5 +1,4 @@
-import { Menu, Avatar, Badge } from 'antd';
-import { UserOutlined } from '@ant-design/icons';
+import { Menu, Badge } from 'antd';
 import FupsIcon from "../../Components/FupsIcon/FupsIcon"
 import Logo from "../../Assets/images/logo.svg"
 
@@ -14,29 +13,20 @@ function Header(props) {
         </div>
         <div className={styles["header__menu"]}>
             <Menu mode="horizontal" defaultSelectedKeys={['hesaplar']}>
-                <Menu.Item key="hesaplar" icon={<FupsIcon color={"#909099"} size="20px" icon={"filled"} />}>
-                    <Link to="/dashboard">
-                        <a>Hesaplar</a>
-                    </Link>
+                <Menu.Item className={styles["header__menu-item"]} key="hesaplar" icon={<FupsIcon color={"#909099"} size="20px" icon={"filled"} />}>
+                    <Link to="/dashboard" className={styles["header__menu-link"]}>Hesaplar</Link>
                 </Menu.Item>
-                <Menu.Item key="kartlar" icon={<FupsIcon color={"#909099"} size="20px" icon={"card"} />}>
-                    <Link to="/dashboard">
-                        <a>Kartlar</a>
-                    </Link>
+                <Menu.Item className={styles["header__menu-item"]} key="kartlar" icon={<FupsIcon color={"#909099"} size="20px" icon={"card"} />}>
+                    <Link to="/dashboard" className={styles["header__menu-link"]}>Kartlar</Link>
                 </Menu.Item>
-                <Menu.Item key="islemler" icon={<FupsIcon color={"#909099"} size="20px" icon={"function"} />}>
-                    <Link to="/dashboard">
-                        <a>İşlemler</a>
-                    </Link>
+                <Menu.Item className={styles["header__menu-item"]} key="islemler" icon={<FupsIcon color={"#909099"} size="20px" icon={"function"} />}>
+                    <Link to="/dashboard" className={styles["header__menu-link"]}>İşlemler</Link>
                 </Menu.Item>
-                <Menu.Item key="kampanyalar" icon={<FupsIcon color={"#909099"} size="20px" icon={"star"} />}>
-                    <Link to="/dashboard">
-                        <a>Kampanyalar</a>
-                    </Link>
+                <Menu.Item className={styles["header__menu-item"]} key="kampanyalar" icon={<FupsIcon color={"#909099"} size="20px" icon={"star"} />}>
+                    <Link to="/dashboard" className={styles["header__menu-link"]}>Kampanyalar</Link>
                 </Menu.Item>
             </Menu>
         </div>
-        
         <div  className={styles["header__avatar"]}>
             <Badge className={styles["header__avatar-badge"]} count={12}>
                 <img src={UserAvatar} alt="Sercan Cihangir" />

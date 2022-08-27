@@ -11,6 +11,10 @@
 
     &__menu {
         width: 100%;
+        
+        &-item {
+            display: none;
+        }
     }
 
     &__avatar {
