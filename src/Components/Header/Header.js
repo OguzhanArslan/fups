@@ -7,24 +7,21 @@ import { Link } from 'react-router-dom';
 import UserAvatar from "../../Assets/images/dummy/avatar.webp"
 
 function Header(props) {
+    const { menu } = props;
+
     return(<header className={styles.header}>
         <div className={styles["header__logo"]}>
             <img src={Logo} alt="Fups" />
         </div>
         <div className={styles["header__menu"]}>
             <Menu mode="horizontal" defaultSelectedKeys={['hesaplar']}>
-                <Menu.Item className={styles["header__menu-item"]} key="hesaplar" icon={<FupsIcon color={"#909099"} size="20px" icon={"filled"} />}>
-                    <Link to="/dashboard" className={styles["header__menu-link"]}>Hesaplar</Link>
-                </Menu.Item>
-                <Menu.Item className={styles["header__menu-item"]} key="kartlar" icon={<FupsIcon color={"#909099"} size="20px" icon={"card"} />}>
-                    <Link to="/dashboard" className={styles["header__menu-link"]}>Kartlar</Link>
-                </Menu.Item>
-                <Menu.Item className={styles["header__menu-item"]} key="islemler" icon={<FupsIcon color={"#909099"} size="20px" icon={"function"} />}>
-                    <Link to="/dashboard" className={styles["header__menu-link"]}>İşlemler</Link>
-                </Menu.Item>
-                <Menu.Item className={styles["header__menu-item"]} key="kampanyalar" icon={<FupsIcon color={"#909099"} size="20px" icon={"star"} />}>
-                    <Link to="/dashboard" className={styles["header__menu-link"]}>Kampanyalar</Link>
-                </Menu.Item>
+                { menu.map(menu => {
+                    return (
+                        <Menu.Item className={styles["header__menu-item"]} key={menu.key} icon={<FupsIcon color={"#909099"} size="20px" icon={menu.icon} />}>
+                            <Link to={menu.link} className={styles["header__menu-link"]}>{menu.name}</Link>
+                        </Menu.Item>
+                    )
+                })}
             </Menu>
         </div>
         <div  className={styles["header__avatar"]}>

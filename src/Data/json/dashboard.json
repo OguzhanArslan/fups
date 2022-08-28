@@ -1,0 +1,304 @@
+{
+    "header": {
+        "menu": [
+            {
+                "name": "Hesaplar",
+                "key": "hesaplar",
+                "link": "/dashboard",
+                "icon": "filled"
+            },
+            {
+                "name": "Kartlar",
+                "key": "kartlar",
+                "link": "/dashboard",
+                "icon": "card"
+            },
+            {
+                "name": "İşlemler",
+                "key": "islemler",
+                "link": "/dashboard",
+                "icon": "function"
+            },
+            {
+                "name": "Kampanyalar",
+                "key": "kampanyalar",
+                "link": "/dashboard",
+                "icon": "star"
+            }
+        ]
+    },
+    "promo": {
+        "title": "SİZE ÖZEL KAMPANYALAR",
+        "list": [
+            {
+                "title": "TURKCELL KAMPANYASI",
+                "description": "Fatura ödemelerinizde her ay 10 TL kazan dilediğince harca.",
+                "link": "/dashboard",
+                "image": "turkcell.webp"
+            },
+            {
+                "title": "OYUN & E-PIN FIRSATI",
+                "description": "Tüm alışverişlerinizde %20 bonus kazanma fırsatını kaçırma.",
+                "link": "/dashboard",
+                "image": "turktelekom.webp"
+            },
+            {
+                "title": "ÜCRETSİZ İŞLEM",
+                "description": "Fups App'i hemen indir! Ücretsiz işlem fırsatından sende yararlan.",
+                "link": "/dashboard",
+                "image": "ucretsiz.webp"
+            },
+            {
+                "title": "OYUN & E-PIN FIRSATI",
+                "description": "Tüm alışverişlerinizde %20 bonus kazanma fırsatını kaçırma.",
+                "link": "/dashboard",
+                "image": "turktelekom.webp"
+            },
+            {
+                "title": "TURKCELL KAMPANYASI",
+                "description": "Fatura ödemelerinizde her ay 10 TL kazan dilediğince harca.",
+                "link": "/dashboard",
+                "image": "turkcell.webp"
+            },
+            {
+                "title": "ÜCRETSİZ İŞLEM",
+                "description": "Fups App'i hemen indir! Ücretsiz işlem fırsatından sende yararlan.",
+                "link": "/dashboard",
+                "image": "ucretsiz.webp"
+            }
+        ]
+    },
+    "table": {
+        "title": "HESAP HAREKETLERİ",
+        "link": {
+            "text": "Harcama Analizi",
+            "to": "/dashboard"
+        },
+        "list": [
+            {
+                "info": {
+                    "icon": "food",
+                    "color": "#8066cc",
+                    "user": {
+                        "name": "Test",
+                        "image": "user.webp"
+                    }
+                },
+                "content": {
+                    "title": "Burger’s Lab",
+                    "description": "Aile Hesabım (Yasemin Pınar)"
+                },
+                "price": {
+                    "total": "200,00",
+                    "unit": "₺",
+                    "status": "outgoing",
+                    "ago": "2 saat önce"
+                }
+            },
+            {
+                "info": {
+                    "icon": "money",
+                    "color": "#26bf66",
+                    "user": {
+                        "name": "Test",
+                        "image": "user.webp"
+                    }
+                },
+                "content": {
+                    "title": "Gelen Transfer",
+                    "description": "Dolar Hesabım (Erman Karakaya)"
+                },
+                "price": {
+                    "total": "140,00",
+                    "unit": "$",
+                    "status": "ingoing",
+                    "ago": "6 saat önce"
+                }
+            },
+            {
+                "info": {
+                    "icon": "gold",
+                    "color": "#ffb44d"
+                },
+                "content": {
+                    "title": "Para Yükle",
+                    "description": "Altın Hesabım"
+                },
+                "price": {
+                    "total": "2,00",
+                    "unit": "gr",
+                    "status": "buy",
+                    "ago": "12 saat önce"
+                }
+            },
+            {
+                "info": {
+                    "icon": "money",
+                    "color": "#26bf66",
+                    "user": {
+                        "name": "Test",
+                        "image": "user.webp"
+                    }
+                },
+                "content": {
+                    "title": "Gelen Transfer",
+                    "description": "Dolar Hesabım (Erman Karakaya)"
+                },
+                "price": {
+                    "total": "140,00",
+                    "unit": "$",
+                    "status": "ingoing",
+                    "ago": "6 saat önce"
+                }
+            },
+            {
+                "info": {
+                    "icon": "gold",
+                    "color": "#ffb44d"
+                },
+                "content": {
+                    "title": "Para Yükle",
+                    "description": "Altın Hesabım"
+                },
+                "price": {
+                    "total": "2,00",
+                    "unit": "gr",
+                    "status": "buy",
+                    "ago": "12 saat önce"
+                }
+            },
+            {
+                "info": {
+                    "icon": "food",
+                    "color": "#8066cc",
+                    "user": {
+                        "name": "Test",
+                        "image": "user.webp"
+                    }
+                },
+                "content": {
+                    "title": "Burger’s Lab",
+                    "description": "Aile Hesabım (Yasemin Pınar)"
+                },
+                "price": {
+                    "total": "200,00",
+                    "unit": "₺",
+                    "status": "outgoing",
+                    "ago": "2 saat önce"
+                }
+            },
+            {
+                "info": {
+                    "icon": "food",
+                    "color": "#8066cc",
+                    "user": {
+                        "name": "Test",
+                        "image": "user.webp"
+                    }
+                },
+                "content": {
+                    "title": "Burger’s Lab",
+                    "description": "Aile Hesabım (Yasemin Pınar)"
+                },
+                "price": {
+                    "total": "200,00",
+                    "unit": "₺",
+                    "status": "outgoing",
+                    "ago": "2 saat önce"
+                }
+            },
+            {
+                "info": {
+                    "icon": "money",
+                    "color": "#26bf66",
+                    "user": {
+                        "name": "Test",
+                        "image": "user.webp"
+                    }
+                },
+                "content": {
+                    "title": "Gelen Transfer",
+                    "description": "Dolar Hesabım (Erman Karakaya)"
+                },
+                "price": {
+                    "total": "140,00",
+                    "unit": "$",
+                    "status": "ingoing",
+                    "ago": "6 saat önce"
+                }
+            },
+            {
+                "info": {
+                    "icon": "gold",
+                    "color": "#ffb44d"
+                },
+                "content": {
+                    "title": "Para Yükle",
+                    "description": "Altın Hesabım"
+                },
+                "price": {
+                    "total": "2,00",
+                    "unit": "gr",
+                    "status": "buy",
+                    "ago": "12 saat önce"
+                }
+            },
+            {
+                "info": {
+                    "icon": "money",
+                    "color": "#26bf66",
+                    "user": {
+                        "name": "Test",
+                        "image": "user.webp"
+                    }
+                },
+                "content": {
+                    "title": "Gelen Transfer",
+                    "description": "Dolar Hesabım (Erman Karakaya)"
+                },
+                "price": {
+                    "total": "140,00",
+                    "unit": "$",
+                    "status": "ingoing",
+                    "ago": "6 saat önce"
+                }
+            },
+            {
+                "info": {
+                    "icon": "gold",
+                    "color": "#ffb44d"
+                },
+                "content": {
+                    "title": "Para Yükle",
+                    "description": "Altın Hesabım"
+                },
+                "price": {
+                    "total": "2,00",
+                    "unit": "gr",
+                    "status": "buy",
+                    "ago": "12 saat önce"
+                }
+            },
+            {
+                "info": {
+                    "icon": "food",
+                    "color": "#8066cc",
+                    "user": {
+                        "name": "Test",
+                        "image": "user.webp"
+                    }
+                },
+                "content": {
+                    "title": "Burger’s Lab",
+                    "description": "Aile Hesabım (Yasemin Pınar)"
+                },
+                "price": {
+                    "total": "200,00",
+                    "unit": "₺",
+                    "status": "outgoing",
+                    "ago": "2 saat önce"
+                }
+            }
+        ]
+    }
+}

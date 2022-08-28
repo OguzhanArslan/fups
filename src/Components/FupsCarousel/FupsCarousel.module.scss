@@ -1,0 +1,131 @@
+.box {
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 40px;
+        padding: 24px 0 14px 0;
+
+        &-title {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 0.2px;
+            color: #17171a;
+        }
+
+        &-arrow {
+            display: flex;
+            align-items: center;
+        }
+
+        &-btn {
+            background-color: transparent;
+            border: 0;
+            outline: 0;
+            margin-left: 16px;
+            padding: 0;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+.promo {
+    margin-bottom: 25px;
+    margin-left: 40px;
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        margin-right: 16px;
+
+        &::before {
+            content: "";
+            border-radius: 12px;
+            background-color: #fff;
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 100%;
+            height: calc(100% - 10px);
+        }
+    }
+
+    &__image {
+        border-radius: 12px 12px 0 0;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px 24px 10px 7px;
+        position: relative;
+        z-index: 1;
+
+        &-title {
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.2px;
+            color: #17171a;
+            margin-bottom: 10px;
+        }
+
+        &-text {
+            font-size: 14px;
+            font-weight: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #606066;
+            margin: 0;
+        }
+
+        &-link {
+            position: absolute;
+            right: 12px;
+            bottom: 12px;
+        }
+    }
+
+    :global(.slick-dots) {
+        position: relative;
+        bottom: 0;
+        margin-top: 24px;
+
+        li {
+            width: 8px;
+            height: 8px;
+            margin: 0 4px;
+
+            button {
+                background-color: #e8e8f0;
+                border-radius: 50%;
+                width: 8px;
+                height: 8px;
+                opacity: 1;
+            }
+
+            &:global(.slick-active) {
+                width: 8px;
+    
+                button {
+                    background-color: #155ed4 !important;
+                }
+            }
+        }
+
+        
+    }
+}

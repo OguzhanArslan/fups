@@ -7,11 +7,16 @@ import FupsSelect from "../../Components/FupsSelect/FupsSelect"
 import FupsInput from "../../Components/FupsInput/FupsInput"
 import FupsButton from "../../Components/FupsButton/FupsButton"
 
+import { Data_Login } from "../../Data/index"
+
 
 function Login() {
-
+    const { users } = Data_Login;
     const onFinish = (values) => {
         console.log('Success:', values);
+        console.log(Data_Login.users)
+        const userData = users.find((user) => user.username === values.username && user.password === values.password);
+        console.log("userData", userData)
     };
 
     const onFinishFailed = (errorInfo) => {
@@ -29,7 +34,7 @@ function Login() {
                 </div>
             </div>
             <div className={styles["login__content"]}>
-                <div class={styles["login__form"]}>
+                <div className={styles["login__form"]}>
                     <h1>Kullanıcı Girişi</h1>
                     <p>Ad soyad ve şifren ile Fups hesabına giriş yapabilirsin.</p>
                     <Form
