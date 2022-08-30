@@ -1,9 +1,21 @@
-.box {
+@import "../../Assets/scss/mixin.scss";
+
+.promo {
+    margin-bottom: 25px;
+    margin-left: 40px;
+
+    @include max1200 {
+        margin-right: 24px;
+    }
+
+    @include tablet-mobil {
+        margin: 0 20px;
+    }
+
     &__header {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 0 40px;
         padding: 24px 0 14px 0;
 
         &-title {
@@ -37,17 +49,16 @@
             }
         }
     }
-}
-
-.promo {
-    margin-bottom: 25px;
-    margin-left: 40px;
 
     &__item {
         display: flex;
         justify-content: space-between;
         position: relative;
         margin-right: 16px;
+
+        @include mobil {
+            margin-right: 0;
+        }
 
         &::before {
             content: "";

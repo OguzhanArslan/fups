@@ -1,7 +1,13 @@
 html, body {
-    background-color: #f5f5fa;
+    background-color: #ffffff;
     font-family: "Sofia Pro";
     font-size: 16px;
+    
+    &.navopen {
+        height: 100vh;
+        overflow: hidden;
+        position: fixed;
+    }
 }
 
 *,
@@ -17,5 +23,14 @@ ul {
 }
 
 .layout {
-    background: transparent;
+    background-color: #f5f5fa;
+    min-height: 100vh;
+}
+
+.container {
+    margin: 0 40px;
+
+    @include tablet-mobil {
+        margin: 0 20px;
+    }
 }

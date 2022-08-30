@@ -1,0 +1,39 @@
+@import "../../../Assets/scss/mixin.scss";
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    &__content {
+        max-width: 432px;
+        
+        h1 {
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 1;
+            letter-spacing: 0.56px;
+            color: #17171a;
+            margin-bottom: 16px;
+
+            @include tablet-mobil {
+                font-size: 24px;
+                margin-bottom: 8px;
+            }
+        }
+    
+        p {
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 1.2;
+            color: #606066;
+            margin-bottom: 32px;
+
+            @include tablet-mobil {
+                font-size: 14;
+                margin-bottom: 16px;
+            }
+        }
+    }
+}

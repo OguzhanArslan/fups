@@ -1,0 +1,80 @@
+@import "../../Assets/scss/mixin.scss";
+
+.banner {
+    border-radius: 12px;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    display: none;
+    position: relative;
+
+    &--active {
+        display: flex;
+    }
+
+    @include tablet-mobil {
+        margin-bottom: 25px;
+    }
+
+    &__content {
+        padding: 32px 40px;
+
+        &-title {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 0.6px;
+            color: #17171a;
+            margin-bottom: 16px;
+        }
+
+        &-text {
+            font-size: 16px;
+            font-weight: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #606066;
+            margin-bottom: 32px;
+        }
+
+        &-link {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 0.2px;
+            color: #155ed4;
+        }
+    }
+
+    &__image {
+        > img {
+            max-width: 420px;
+            width: auto;
+            height: auto;
+        }
+
+        @include tablet-mobil {
+            display: none;
+        }
+    }
+
+    &__close {
+        background-color: transparent;
+        border: 0;
+        outline: 0;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        right: 24px;
+        top: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        path {
+            fill: #c0c0cc;
+        }
+    }
+}

@@ -5,11 +5,17 @@ import FupsIcon from "../../Components/FupsIcon/FupsIcon"
 
 import styles from "./FupsTable.module.scss"
 
+let lastIndex = 0
+const updateIndex = () => {
+    lastIndex++
+    return lastIndex
+}
+
 const columns = [
     {
         title: 'Info',
         dataIndex: 'info',
-        key: 'info',
+        key: `info${updateIndex()}`,
         width: "40px",
         render: (_, record) => (
             <div className={styles["table__info"]}>
@@ -28,7 +34,7 @@ const columns = [
     {
         title: 'Content',
         dataIndex: 'content',
-        key: 'content',
+        key: `content${updateIndex()}`,
         render: (_, record) => (
             <div className={styles["table__content"]}>
                 <h3 className={styles["table__content-title"]}>{record.content.title}</h3>
@@ -39,7 +45,7 @@ const columns = [
     {
         title: 'Price',
         dataIndex: 'price',
-        key: 'price',
+        key: `price${updateIndex()}`,
         render: (_, record) => (
             <div className={styles["table__price"]}>
                 <h3 className={classnames({
@@ -57,15 +63,18 @@ const columns = [
 
 function FupsTable(props) {
     const { title, link, list } = props;
-    return (<div className={styles.box}>
-        <div className={styles["box__header"]}>
-            <h2 className={styles["box__header-title"]}>{ title }</h2>
-            <Link className={styles["box__header-link"]} to={ link.to }>
+    return (<div className={classnames({
+            "container": true,
+            [styles.activities]: true,
+        })}>
+        <div className={styles["activities__header"]}>
+            <h2 className={styles["activities__header-title"]}>{ title }</h2>
+            <Link className={styles["activities__header-link"]} to={ link.to }>
                 <span>{ link.text }</span>
                 <FupsIcon size="20px" color="#155ed4" icon={"next"} />
             </Link>
         </div>
-        <div className={styles["box__content"]}>
+        <div className={styles["activities__content"]}>
             <Table
                 className={styles.table}
                 columns={columns}

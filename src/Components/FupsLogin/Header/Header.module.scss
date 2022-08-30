@@ -1,0 +1,10 @@
+@import "../../../Assets/scss/mixin.scss";
+
+.header {
+    display: flex;
+    justify-content: space-between;
+
+    @include tablet-mobil {
+        margin-bottom: 20px;
+    }
+}

@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
+import classnames from "classnames";
 import { Carousel } from 'antd';
 import FupsIcon from "../../Components/FupsIcon/FupsIcon"
 import styles from "./FupsCarousel.module.scss";
@@ -16,30 +17,55 @@ function FupsCarousel(props) {
         setNextStatus(currentSlide === Math.round(promo.current.innerSlider.state.slideCount / 4));
     }, [currentSlide]);
     
-    return(<div className={styles.box}>
-        <div className={styles["box__header"]}>
-            <h2 className={styles["box__header-title"]}>{title}</h2>
-            <div className={styles["box__header-arrow"]}>
-                <button className={styles["box__header-btn"]} onClick={() => promo.current.prev()}><FupsIcon color={prevStatus ? "#c0c0cc" : "#17171a"} size="20px" icon={"prev"} /></button>
-                <button className={styles["box__header-btn"]} onClick={() => promo.current.next()}><FupsIcon color={nextStatus ? "#c0c0cc" : "#17171a"} size="20px" icon={"next"} /></button>
+    return(<>
+        <div className={classnames({
+            "container": true,
+            [styles["promo__header"]]: true
+        })}>
+            <h2 className={styles["promo__header-title"]}>{title}</h2>
+            <div className={styles["promo__header-arrow"]}>
+                <button className={styles["promo__header-btn"]} onClick={() => promo.current.prev()}><FupsIcon color={prevStatus ? "#c0c0cc" : "#17171a"} size="20px" icon={"prev"} /></button>
+                <button className={styles["promo__header-btn"]} onClick={() => promo.current.next()}><FupsIcon color={nextStatus ? "#c0c0cc" : "#17171a"} size="20px" icon={"next"} /></button>
             </div>
         </div>
-        <div className={styles["box__content"]}>
-            <Carousel ref={promo} className={styles.promo} slidesToShow={4.2} slidesToScroll={1} infinite={false} swipeToSlide draggable beforeChange={(current, next) => {
+        <Carousel ref={promo} className={styles.promo} slidesToShow={4.2} slidesToScroll={1} infinite={false} swipeToSlide draggable beforeChange={(current, next) => {
                 setCurrentSlide(Math.round(next))
-            }}>
-                { list.map(item => {
-                    let image = require('../../Assets/images/dummy/' + item.image);
+            }} responsive={[
+                {
+                  breakpoint: 1200,
+                  settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                  }
+                },
+                {
+                  breakpoint: 900,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                  }
+                },
+                {
+                  breakpoint: 767,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                  }
+                }
+              ]}>
+                { list.map((item, index) => {
+                    const { title, description, url, image } = item;
+                    let promoImage = require('../../Assets/images/dummy/' + image);
                     return (
-                        <div>
+                        <div key={index}>
                             <div className={styles["promo__item"]}>
                                 <div className={styles["promo__image"]}>
-                                    <img src={image} alt={item.title} />
+                                    <img src={promoImage} alt={title} />
                                 </div>
                                 <div className={styles["promo__content"]}>
-                                    <h3 className={styles["promo__content-title"]}>{item.title}</h3>
-                                    <p className={styles["promo__content-text"]}>{item.description}</p>
-                                    <Link className={styles["promo__content-link"]} to={item.link}>
+                                    <h3 className={styles["promo__content-title"]}>{title}</h3>
+                                    <p className={styles["promo__content-text"]}>{description}</p>
+                                    <Link className={styles["promo__content-link"]} to={url}>
                                         <FupsIcon size="12px" icon={"right"} />
                                     </Link>
                                 </div>
@@ -49,8 +75,7 @@ function FupsCarousel(props) {
                 })}
                 
             </Carousel>
-        </div>
-    </div>)
+    </>)
 }
 
 export default FupsCarousel;

@@ -1,5 +1,11 @@
-.box {
-    margin: 0 40px;
+@import "../../Assets/scss/mixin.scss";
+
+.activities {
+    margin-bottom: 50px;
+
+    @include tablet-mobil {
+        margin-bottom: 25px;
+    }
 
     &__header {
         display: flex;

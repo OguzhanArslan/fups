@@ -1,9 +1,20 @@
+@import "../../Assets/scss/mixin.scss";
+
 .list {
     &__item {
         display: flex;
         margin-bottom: 24px;
         justify-content: flex-start;
         width: 100%;
+
+        @include tablet-mobil {
+            margin-bottom: 18px;
+            align-items: center;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
 
     &__icon {
@@ -15,5 +26,10 @@
         font-weight: normal;
         color: #dcdce6;
         margin-left: 24px;
+
+        @include tablet-mobil {
+            font-size: 14px;
+            margin-left: 12px;
+        }
     }
 }

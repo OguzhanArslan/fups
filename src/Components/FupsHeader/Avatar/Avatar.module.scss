@@ -1,0 +1,42 @@
+@import "../../../Assets/scss/mixin.scss";
+
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 60px;
+
+    @include tablet-mobil {
+        margin-left: 0;
+    }
+
+    &__badge {
+        img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    &__text {
+        margin-left: 16px;
+    }
+
+    &__name {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: 0.2px;
+        color: #17171a;
+        margin-bottom: 5px;
+    }
+
+    &__type {
+        font-size: 12px;
+        font-weight: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        color: #909099;
+        margin: 0;
+    }
+}

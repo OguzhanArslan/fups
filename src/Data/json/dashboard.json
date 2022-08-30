@@ -4,26 +4,67 @@
             {
                 "name": "Hesaplar",
                 "key": "hesaplar",
-                "link": "/dashboard",
-                "icon": "filled"
+                "link": "/",
+                "icon": "filled",
+                "active": true,
+                "sublist": [
+                    {
+                        "name": "Menu 1",
+                        "key": "menu-1",
+                        "link": "/"
+                    },
+                    {
+                        "name": "Menu 2",
+                        "key": "menu-2",
+                        "link": "/"
+                    },
+                    {
+                        "name": "Menu 3",
+                        "key": "menu-3",
+                        "link": "/"
+                    },
+                    {
+                        "name": "Menu 4",
+                        "key": "menu-4",
+                        "link": "/"
+                    },
+                    {
+                        "name": "Menu 5",
+                        "key": "menu-5",
+                        "link": "/"
+                    },
+                    {
+                        "name": "Menu 6",
+                        "key": "menu-6",
+                        "link": "/"
+                    },
+                    {
+                        "name": "Menu 7",
+                        "key": "menu-7",
+                        "link": "/"
+                    }
+                ]
             },
             {
                 "name": "Kartlar",
                 "key": "kartlar",
-                "link": "/dashboard",
-                "icon": "card"
+                "link": "/",
+                "icon": "card",
+                "active": false
             },
             {
                 "name": "İşlemler",
                 "key": "islemler",
-                "link": "/dashboard",
-                "icon": "function"
+                "link": "/",
+                "icon": "function",
+                "active": false
             },
             {
                 "name": "Kampanyalar",
                 "key": "kampanyalar",
-                "link": "/dashboard",
-                "icon": "star"
+                "link": "/",
+                "icon": "star",
+                "active": false
             }
         ]
     },
@@ -33,37 +74,37 @@
             {
                 "title": "TURKCELL KAMPANYASI",
                 "description": "Fatura ödemelerinizde her ay 10 TL kazan dilediğince harca.",
-                "link": "/dashboard",
+                "url": "/",
                 "image": "turkcell.webp"
             },
             {
                 "title": "OYUN & E-PIN FIRSATI",
                 "description": "Tüm alışverişlerinizde %20 bonus kazanma fırsatını kaçırma.",
-                "link": "/dashboard",
+                "url": "/",
                 "image": "turktelekom.webp"
             },
             {
                 "title": "ÜCRETSİZ İŞLEM",
                 "description": "Fups App'i hemen indir! Ücretsiz işlem fırsatından sende yararlan.",
-                "link": "/dashboard",
+                "url": "/",
                 "image": "ucretsiz.webp"
             },
             {
                 "title": "OYUN & E-PIN FIRSATI",
                 "description": "Tüm alışverişlerinizde %20 bonus kazanma fırsatını kaçırma.",
-                "link": "/dashboard",
+                "url": "/",
                 "image": "turktelekom.webp"
             },
             {
                 "title": "TURKCELL KAMPANYASI",
                 "description": "Fatura ödemelerinizde her ay 10 TL kazan dilediğince harca.",
-                "link": "/dashboard",
+                "url": "/",
                 "image": "turkcell.webp"
             },
             {
                 "title": "ÜCRETSİZ İŞLEM",
                 "description": "Fups App'i hemen indir! Ücretsiz işlem fırsatından sende yararlan.",
-                "link": "/dashboard",
+                "url": "/",
                 "image": "ucretsiz.webp"
             }
         ]
@@ -72,10 +113,11 @@
         "title": "HESAP HAREKETLERİ",
         "link": {
             "text": "Harcama Analizi",
-            "to": "/dashboard"
+            "to": "/"
         },
         "list": [
             {
+                "key": "10",
                 "info": {
                     "icon": "food",
                     "color": "#8066cc",
@@ -96,6 +138,7 @@
                 }
             },
             {
+                "key": "20",
                 "info": {
                     "icon": "money",
                     "color": "#26bf66",
@@ -116,6 +159,7 @@
                 }
             },
             {
+                "key": "30",
                 "info": {
                     "icon": "gold",
                     "color": "#ffb44d"
@@ -132,6 +176,7 @@
                 }
             },
             {
+                "key": "40",
                 "info": {
                     "icon": "money",
                     "color": "#26bf66",
@@ -152,6 +197,7 @@
                 }
             },
             {
+                "key": "50",
                 "info": {
                     "icon": "gold",
                     "color": "#ffb44d"
@@ -168,6 +214,7 @@
                 }
             },
             {
+                "key": "60",
                 "info": {
                     "icon": "food",
                     "color": "#8066cc",
@@ -188,6 +235,7 @@
                 }
             },
             {
+                "key": "70",
                 "info": {
                     "icon": "food",
                     "color": "#8066cc",
@@ -208,6 +256,7 @@
                 }
             },
             {
+                "key": "80",
                 "info": {
                     "icon": "money",
                     "color": "#26bf66",
@@ -228,6 +277,7 @@
                 }
             },
             {
+                "key": "90",
                 "info": {
                     "icon": "gold",
                     "color": "#ffb44d"
@@ -244,6 +294,7 @@
                 }
             },
             {
+                "key": "100",
                 "info": {
                     "icon": "money",
                     "color": "#26bf66",
@@ -264,6 +315,7 @@
                 }
             },
             {
+                "key": "110",
                 "info": {
                     "icon": "gold",
                     "color": "#ffb44d"
@@ -280,6 +332,7 @@
                 }
             },
             {
+                "key": "120",
                 "info": {
                     "icon": "food",
                     "color": "#8066cc",
@@ -300,5 +353,14 @@
                 }
             }
         ]
+    },
+    "banner": {
+        "title": "Sosyal hesaplar sizlerle!",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing eliti, donec rhoncus velit enim, ut malesuada erat dignissim sed.",
+        "url": {
+            "link": "/",
+            "text": "Hemen Satın Al"
+        },
+        "image": "social.webp"
     }
 }

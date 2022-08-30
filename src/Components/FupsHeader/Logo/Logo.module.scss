@@ -1,0 +1,9 @@
+@import "../../../Assets/scss/mixin.scss";
+
+.logo {
+    margin-right: 60px;
+
+    @include tablet-mobil {
+        margin-right: 0;
+    }
+}
