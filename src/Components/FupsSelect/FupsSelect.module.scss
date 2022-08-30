@@ -1,4 +1,15 @@
+:global(.ant-select:not(.ant-select-customize-input) .ant-select-selector) {
+    border-radius: 12px;
+    background-color: #f5f5fa;
+    padding: 23px 18px 7px 18px;
+    height: 56px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    color: #17171a;
+}
 
-.FupsSelect {
-
+:global(.ant-select-selection-item) {
+    font-weight: 600;
+    line-height: 1;
 }

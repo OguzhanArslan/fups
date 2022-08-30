@@ -1,0 +1,16 @@
+{
+    "info": [
+        { 
+            "icon": { "name": "mobile", "color": "#8066cc" },
+            "title": "Telefonunuzdan Fups uygulamasını açın."
+        },
+        { 
+            "icon": { "name": "user", "color": "#ffb44d" },
+            "title": "Profil fotoğrafınızdaki QR ikonuna basın."
+        },
+        { 
+            "icon": { "name": "identify", "color": "#41bf9f" },
+            "title": "QR Kodu okutarak internet şubeye giriş yapabilirsiniz."
+        }
+    ]
+}

@@ -3,14 +3,14 @@
         {
             "name": "Oğuzhan Arslan",
             "username": "oguzhanarslan",
-            "type": 0,
+            "type": 1,
             "password": "010203",
             "image": "oguzhanarslan.jpg"
         },
         {
             "name": "Şenol Çoşkun",
             "username": "senolcoskun",
-            "type": 1,
+            "type": 2,
             "password": "010203",
             "image": "senolcoskun.jpg"
         }

@@ -36,4 +36,23 @@
             }
         }
     }
+
+    &__btns {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-link {
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.2px;
+            color: #155ed4;
+        }
+
+        > button {
+            min-width: 160px;
+        }
+    }
+
+
 }

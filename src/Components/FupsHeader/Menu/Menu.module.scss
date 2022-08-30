@@ -97,7 +97,7 @@
         height: calc(100vh - 80px);
         display: none;
         flex-direction: column;
-        padding: 10px 0;
+        padding: 0 0 10px 0;
     }
 
     &__item {
@@ -208,7 +208,7 @@
         border-radius: 0;
         box-shadow: none;
         top: 0;
-        padding: 8px 0;
+        padding: 0 0 8px 0;
     }
 
     &__item {

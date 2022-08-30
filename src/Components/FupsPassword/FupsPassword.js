@@ -1,11 +1,12 @@
 import { Input } from "antd";
 import FloatLabel from "../FupsFloatLabel/FloatLabel";
-import styles from "./FupsInput.module.scss"
+import styles from "./FupsPassword.module.scss"
 
-function FupsInput(props) {
+
+function FupsPassword(props) {
     return(<FloatLabel label={props.labeltext} name="lastName" value={props.value}>
-        <Input className={styles.FupsInput} {...props} />
+        <Input.Password className={styles.FupsPassword} {...props} />
     </FloatLabel>);
 }
 
-export default FupsInput
+export default FupsPassword

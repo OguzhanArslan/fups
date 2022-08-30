@@ -1,3 +1,17 @@
-.FupsInput {
 
+.FupsInput {
+    border-radius: 12px;
+    background-color: #f5f5fa;
+    padding: 23px 18px 7px 18px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #17171a;
+    line-height: 1;
+    border-color: #f5f5fa;
+
+    
+}
+
+:global(.ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input), :global(.ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input:hover) {
+    background-color: #f5f5fa;
 }

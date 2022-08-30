@@ -1,7 +1,7 @@
 {
     "types": [
-        { "label": "Standart Hesap", "value": 0 }, 
-        { "label": "Onaylı Hesap", "value": 1 }, 
-        { "label": "Premium Hesap", "value": 2 }
+        { "label": "Standart Hesap", "value": 1 }, 
+        { "label": "Onaylı Hesap", "value": 2 }, 
+        { "label": "Premium Hesap", "value": 3 }
     ]
 }
