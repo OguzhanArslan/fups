@@ -13,8 +13,10 @@ function FupsCarousel(props) {
     const promo = useRef(null);
     
     useEffect(() => {
+        let slideToShow = Math.round(promo.current.innerSlider.props.slidesToShow);
+        let slideCount = (slideToShow === 1 ? (promo.current.innerSlider.state.slideCount - 1) : promo.current.innerSlider.state.slideCount)
         setPrevStatus(currentSlide === 0);
-        setNextStatus(currentSlide === Math.round(promo.current.innerSlider.state.slideCount / 4));
+        setNextStatus(currentSlide === Math.round(slideCount / slideToShow));
     }, [currentSlide]);
     
     return(<>
